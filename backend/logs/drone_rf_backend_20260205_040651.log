@@ -1,0 +1,909 @@
+2026-02-05 04:06:51 | INFO     | drone_rf_backend:<module>:68 | ══════════════════════════════════════════════════════════════════════
+2026-02-05 04:06:51 | INFO     | drone_rf_backend:<module>:69 | Drone RF Detection Backend - STARTING
+2026-02-05 04:06:51 | INFO     | drone_rf_backend:<module>:70 | Python: 3.11.2 | PyTorch: 2.5.1+cu121
+2026-02-05 04:06:51 | INFO     | drone_rf_backend:<module>:71 | Device: cuda:0
+2026-02-05 04:06:51 | INFO     | drone_rf_backend:<module>:72 | Model: vgg11_bn  | Classes: 7  | Noise index: 4
+2026-02-05 04:06:51 | INFO     | drone_rf_backend:<module>:73 | Best checkpoint: /home/ghoth/thesis_drone_detection/Robust-Drone-Detection-and-Classification/results/experiments/vgg11_bn_CV5_epochs50_lr0.001_batchsize2/best_model_fold0.pth
+2026-02-05 04:06:51 | INFO     | drone_rf_backend:<module>:74 | Spectrogram: n_fft=512, hop=512
+2026-02-05 04:06:51 | INFO     | drone_rf_backend:<module>:75 | Detection threshold: 0.850
+2026-02-05 04:06:51 | INFO     | drone_rf_backend:<module>:76 | ══════════════════════════════════════════════════════════════════════
+2026-02-05 04:12:05 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 1
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:06 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 2
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:08 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 3
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:09 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 4
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:10 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 5
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:12 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 6
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:13 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 7
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:14 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 8
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:15 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 9
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:17 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 10
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:18 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 11
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:20 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 12
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:21 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 13
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:22 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 14
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:24 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 15
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:25 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 16
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:26 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 17
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:28 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 18
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:29 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 19
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:31 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 20
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:32 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 21
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:33 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 22
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:35 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 23
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:36 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 24
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:37 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 25
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:39 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 26
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:40 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 27
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:42 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 28
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:43 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 29
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:44 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 30
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:46 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 31
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:47 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 32
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:49 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 33
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:50 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 34
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:51 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 35
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:53 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 36
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:54 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 37
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:55 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 38
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:57 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 39
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:58 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 40
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:12:59 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 41
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:13:01 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 42
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    logger.debug(f"Inference | input_shape={list(x.shape)} | output_logits_shape={list(logits.shape)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:30 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 1
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:32 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 2
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:33 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 3
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:34 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 4
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:36 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 5
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:37 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 6
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:39 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 7
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:40 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 8
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:41 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 9
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:43 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 10
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:44 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 11
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:45 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 12
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:47 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 13
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:48 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 14
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:49 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 15
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:51 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 16
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:52 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 17
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:53 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 18
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:55 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 19
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:56 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 20
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:58 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 21
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:19:59 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 22
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:00 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 23
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:02 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 24
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:03 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 25
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:04 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 26
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:06 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 27
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:07 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 28
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:08 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 29
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:10 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 30
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:11 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 31
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:12 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 32
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined
+2026-02-05 04:20:13 | ERROR    | drone_rf_backend:worker_loop:158 | Inference failed on chunk 33
+Traceback (most recent call last):
+  File "/home/ghoth/thesis_drone_detection/backend/app.py", line 113, in worker_loop
+    pred_obj = infer_one(model, transform, iq, device=device)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/Programming/Python_environment/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ghoth/thesis_drone_detection/backend/pipeline.py", line 44, in infer_one
+    pred = int(np.argmax(probs))
+    ^^^^^^
+NameError: name 'logger' is not defined

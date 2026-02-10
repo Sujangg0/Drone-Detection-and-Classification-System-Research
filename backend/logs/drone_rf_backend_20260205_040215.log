@@ -1,0 +1,3 @@
+2026-02-05 04:02:15 | INFO     | drone_rf_backend:<module>:66 | ══════════════════════════════════════════════════════════════════════
+2026-02-05 04:02:15 | INFO     | drone_rf_backend:<module>:67 | Drone RF Detection Backend - STARTING
+2026-02-05 04:02:15 | INFO     | drone_rf_backend:<module>:68 | Python: 3.11.2 | PyTorch: 2.5.1+cu121

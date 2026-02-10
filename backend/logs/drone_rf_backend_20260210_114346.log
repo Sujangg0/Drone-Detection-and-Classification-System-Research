@@ -1,0 +1,299 @@
+2026-02-10 11:43:46 | INFO     | drone_rf_backend:<module>:68 | ══════════════════════════════════════════════════════════════════════
+2026-02-10 11:43:46 | INFO     | drone_rf_backend:<module>:69 | Drone RF Detection Backend - STARTING
+2026-02-10 11:43:46 | INFO     | drone_rf_backend:<module>:70 | Python: 3.11.2 | PyTorch: 2.5.1+cu121
+2026-02-10 11:43:46 | INFO     | drone_rf_backend:<module>:71 | Device: cuda:0
+2026-02-10 11:43:46 | INFO     | drone_rf_backend:<module>:72 | Model: vgg11_bn  | Classes: 7  | Noise index: 4
+2026-02-10 11:43:46 | INFO     | drone_rf_backend:<module>:73 | Best checkpoint: /home/ghoth/thesis_drone_detection/Robust-Drone-Detection-and-Classification/results/experiments/vgg11_bn_CV5_epochs50_lr0.001_batchsize2/best_model_fold0.pth
+2026-02-10 11:43:46 | INFO     | drone_rf_backend:<module>:74 | Spectrogram: n_fft=512, hop=512
+2026-02-10 11:43:46 | INFO     | drone_rf_backend:<module>:75 | Detection threshold: 0.850
+2026-02-10 11:43:46 | INFO     | drone_rf_backend:<module>:76 | ══════════════════════════════════════════════════════════════════════
+2026-02-10 11:44:05 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:05 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk    1 | pred=4 (Noise       ) | conf=0.660 | lat=7703.2 ms | detected=False
+2026-02-10 11:44:05 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:05 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk    2 | pred=4 (Noise       ) | conf=0.758 | lat= 156.0 ms | detected=False
+2026-02-10 11:44:05 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:05 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk    3 | pred=4 (Noise       ) | conf=0.843 | lat= 154.6 ms | detected=False
+2026-02-10 11:44:06 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:06 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk    4 | pred=4 (Noise       ) | conf=0.794 | lat= 154.8 ms | detected=False
+2026-02-10 11:44:06 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:06 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk    5 | pred=4 (Noise       ) | conf=0.790 | lat= 155.4 ms | detected=False
+2026-02-10 11:44:06 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:06 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk    6 | pred=4 (Noise       ) | conf=0.845 | lat= 154.8 ms | detected=False
+2026-02-10 11:44:07 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:07 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk    7 | pred=4 (Noise       ) | conf=0.793 | lat= 155.0 ms | detected=False
+2026-02-10 11:44:07 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:07 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk    8 | pred=4 (Noise       ) | conf=0.758 | lat= 152.3 ms | detected=False
+2026-02-10 11:44:07 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:07 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk    9 | pred=4 (Noise       ) | conf=0.817 | lat= 152.0 ms | detected=False
+2026-02-10 11:44:08 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:08 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   10 | pred=4 (Noise       ) | conf=0.842 | lat= 154.0 ms | detected=False
+2026-02-10 11:44:08 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:08 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   11 | pred=4 (Noise       ) | conf=0.771 | lat= 154.9 ms | detected=False
+2026-02-10 11:44:08 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:08 | INFO     | drone_rf_backend:worker_loop:144 | Chunk   12 | pred=0 (DJI         ) | conf=1.000 | lat= 152.8 ms | detected=True
+2026-02-10 11:44:09 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:09 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   13 | pred=4 (Noise       ) | conf=0.709 | lat= 153.3 ms | detected=False
+2026-02-10 11:44:09 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:09 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   14 | pred=4 (Noise       ) | conf=0.797 | lat= 155.1 ms | detected=False
+2026-02-10 11:44:09 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:09 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   15 | pred=4 (Noise       ) | conf=0.833 | lat= 154.1 ms | detected=False
+2026-02-10 11:44:10 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:10 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   16 | pred=4 (Noise       ) | conf=0.807 | lat= 153.8 ms | detected=False
+2026-02-10 11:44:10 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:10 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   17 | pred=0 (DJI         ) | conf=0.668 | lat= 153.0 ms | detected=False
+2026-02-10 11:44:10 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:10 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   18 | pred=4 (Noise       ) | conf=0.785 | lat= 152.7 ms | detected=False
+2026-02-10 11:44:11 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:11 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   19 | pred=4 (Noise       ) | conf=0.777 | lat= 154.0 ms | detected=False
+2026-02-10 11:44:11 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:11 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   20 | pred=4 (Noise       ) | conf=0.838 | lat= 153.1 ms | detected=False
+2026-02-10 11:44:11 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:11 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   21 | pred=0 (DJI         ) | conf=0.525 | lat= 151.7 ms | detected=False
+2026-02-10 11:44:12 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:12 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   22 | pred=4 (Noise       ) | conf=0.844 | lat= 154.1 ms | detected=False
+2026-02-10 11:44:12 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:12 | INFO     | drone_rf_backend:worker_loop:144 | Chunk   23 | pred=0 (DJI         ) | conf=0.990 | lat= 154.1 ms | detected=True
+2026-02-10 11:44:13 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:13 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   24 | pred=4 (Noise       ) | conf=0.770 | lat= 152.4 ms | detected=False
+2026-02-10 11:44:13 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:13 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   25 | pred=4 (Noise       ) | conf=0.805 | lat= 152.3 ms | detected=False
+2026-02-10 11:44:13 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:13 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   26 | pred=4 (Noise       ) | conf=0.861 | lat= 152.4 ms | detected=False
+2026-02-10 11:44:14 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:14 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   27 | pred=4 (Noise       ) | conf=0.801 | lat= 152.1 ms | detected=False
+2026-02-10 11:44:14 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:14 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   28 | pred=4 (Noise       ) | conf=0.804 | lat= 153.6 ms | detected=False
+2026-02-10 11:44:14 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:14 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   29 | pred=4 (Noise       ) | conf=0.853 | lat= 153.6 ms | detected=False
+2026-02-10 11:44:15 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:15 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   30 | pred=4 (Noise       ) | conf=0.777 | lat= 153.7 ms | detected=False
+2026-02-10 11:44:15 | INFO     | drone_rf_backend:worker_loop:151 | Summary @ chunk 30 | rate=1.7 chunks/s | avg_latency=153.7 ms
+2026-02-10 11:44:15 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:15 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   31 | pred=4 (Noise       ) | conf=0.773 | lat= 154.2 ms | detected=False
+2026-02-10 11:44:15 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:15 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   32 | pred=4 (Noise       ) | conf=0.830 | lat= 152.5 ms | detected=False
+2026-02-10 11:44:16 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:16 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   33 | pred=4 (Noise       ) | conf=0.801 | lat= 154.0 ms | detected=False
+2026-02-10 11:44:16 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:16 | INFO     | drone_rf_backend:worker_loop:144 | Chunk   34 | pred=0 (DJI         ) | conf=1.000 | lat= 153.4 ms | detected=True
+2026-02-10 11:44:16 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:16 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   35 | pred=4 (Noise       ) | conf=0.834 | lat= 153.9 ms | detected=False
+2026-02-10 11:44:17 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:17 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   36 | pred=4 (Noise       ) | conf=0.850 | lat= 153.4 ms | detected=False
+2026-02-10 11:44:17 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:17 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   37 | pred=4 (Noise       ) | conf=0.855 | lat= 153.8 ms | detected=False
+2026-02-10 11:44:18 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:18 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   38 | pred=4 (Noise       ) | conf=0.819 | lat= 152.7 ms | detected=False
+2026-02-10 11:44:18 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:18 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   39 | pred=4 (Noise       ) | conf=0.792 | lat= 153.4 ms | detected=False
+2026-02-10 11:44:18 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:18 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   40 | pred=4 (Noise       ) | conf=0.841 | lat= 153.2 ms | detected=False
+2026-02-10 11:44:19 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:19 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   41 | pred=4 (Noise       ) | conf=0.843 | lat= 153.5 ms | detected=False
+2026-02-10 11:44:19 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:19 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   42 | pred=4 (Noise       ) | conf=0.844 | lat= 152.8 ms | detected=False
+2026-02-10 11:44:20 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:20 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   43 | pred=4 (Noise       ) | conf=0.698 | lat= 154.5 ms | detected=False
+2026-02-10 11:44:20 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:20 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   44 | pred=4 (Noise       ) | conf=0.796 | lat= 154.3 ms | detected=False
+2026-02-10 11:44:22 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:22 | INFO     | drone_rf_backend:worker_loop:144 | Chunk   45 | pred=0 (DJI         ) | conf=1.000 | lat= 153.6 ms | detected=True
+2026-02-10 11:44:22 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:22 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   46 | pred=4 (Noise       ) | conf=0.833 | lat= 152.4 ms | detected=False
+2026-02-10 11:44:22 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:22 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   47 | pred=4 (Noise       ) | conf=0.813 | lat= 153.5 ms | detected=False
+2026-02-10 11:44:23 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:23 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   48 | pred=4 (Noise       ) | conf=0.836 | lat= 152.6 ms | detected=False
+2026-02-10 11:44:23 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:23 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   49 | pred=4 (Noise       ) | conf=0.800 | lat= 154.3 ms | detected=False
+2026-02-10 11:44:23 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:23 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   50 | pred=4 (Noise       ) | conf=0.825 | lat= 153.2 ms | detected=False
+2026-02-10 11:44:24 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:24 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   51 | pred=4 (Noise       ) | conf=0.778 | lat= 153.3 ms | detected=False
+2026-02-10 11:44:24 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:24 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   52 | pred=4 (Noise       ) | conf=0.816 | lat= 153.5 ms | detected=False
+2026-02-10 11:44:24 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:24 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   53 | pred=4 (Noise       ) | conf=0.800 | lat= 154.0 ms | detected=False
+2026-02-10 11:44:25 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:25 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   54 | pred=4 (Noise       ) | conf=0.791 | lat= 154.4 ms | detected=False
+2026-02-10 11:44:25 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:25 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   55 | pred=4 (Noise       ) | conf=0.819 | lat= 154.1 ms | detected=False
+2026-02-10 11:44:26 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:26 | INFO     | drone_rf_backend:worker_loop:144 | Chunk   56 | pred=0 (DJI         ) | conf=1.000 | lat= 153.2 ms | detected=True
+2026-02-10 11:44:26 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:26 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   57 | pred=4 (Noise       ) | conf=0.794 | lat= 153.9 ms | detected=False
+2026-02-10 11:44:27 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:27 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   58 | pred=4 (Noise       ) | conf=0.832 | lat= 153.4 ms | detected=False
+2026-02-10 11:44:27 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:27 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   59 | pred=4 (Noise       ) | conf=0.761 | lat= 152.6 ms | detected=False
+2026-02-10 11:44:27 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:27 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   60 | pred=4 (Noise       ) | conf=0.762 | lat= 154.4 ms | detected=False
+2026-02-10 11:44:27 | INFO     | drone_rf_backend:worker_loop:151 | Summary @ chunk 60 | rate=2.0 chunks/s | avg_latency=154.4 ms
+2026-02-10 11:44:28 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:28 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   61 | pred=4 (Noise       ) | conf=0.810 | lat= 154.6 ms | detected=False
+2026-02-10 11:44:28 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:28 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   62 | pred=4 (Noise       ) | conf=0.762 | lat= 153.2 ms | detected=False
+2026-02-10 11:44:28 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:28 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   63 | pred=4 (Noise       ) | conf=0.829 | lat= 153.8 ms | detected=False
+2026-02-10 11:44:29 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:29 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   64 | pred=4 (Noise       ) | conf=0.839 | lat= 152.3 ms | detected=False
+2026-02-10 11:44:29 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:29 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   65 | pred=4 (Noise       ) | conf=0.808 | lat= 154.6 ms | detected=False
+2026-02-10 11:44:30 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:30 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   66 | pred=4 (Noise       ) | conf=0.835 | lat= 154.4 ms | detected=False
+2026-02-10 11:44:30 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:30 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   67 | pred=4 (Noise       ) | conf=0.673 | lat= 154.1 ms | detected=False
+2026-02-10 11:44:30 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:30 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   68 | pred=4 (Noise       ) | conf=0.864 | lat= 155.3 ms | detected=False
+2026-02-10 11:44:31 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:31 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   69 | pred=4 (Noise       ) | conf=0.873 | lat= 154.5 ms | detected=False
+2026-02-10 11:44:31 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:31 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   70 | pred=4 (Noise       ) | conf=0.831 | lat= 153.0 ms | detected=False
+2026-02-10 11:44:31 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:31 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   71 | pred=4 (Noise       ) | conf=0.829 | lat= 153.8 ms | detected=False
+2026-02-10 11:44:32 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:32 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   72 | pred=4 (Noise       ) | conf=0.758 | lat= 152.5 ms | detected=False
+2026-02-10 11:44:32 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:32 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   73 | pred=4 (Noise       ) | conf=0.780 | lat= 154.4 ms | detected=False
+2026-02-10 11:44:33 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:33 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   74 | pred=4 (Noise       ) | conf=0.754 | lat= 153.3 ms | detected=False
+2026-02-10 11:44:33 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:33 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   75 | pred=4 (Noise       ) | conf=0.851 | lat= 152.2 ms | detected=False
+2026-02-10 11:44:33 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:33 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   76 | pred=4 (Noise       ) | conf=0.775 | lat= 153.8 ms | detected=False
+2026-02-10 11:44:34 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:34 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   77 | pred=4 (Noise       ) | conf=0.770 | lat= 152.9 ms | detected=False
+2026-02-10 11:44:34 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:34 | INFO     | drone_rf_backend:worker_loop:144 | Chunk   78 | pred=0 (DJI         ) | conf=1.000 | lat= 152.1 ms | detected=True
+2026-02-10 11:44:34 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:34 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   79 | pred=4 (Noise       ) | conf=0.821 | lat= 153.5 ms | detected=False
+2026-02-10 11:44:35 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:35 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   80 | pred=4 (Noise       ) | conf=0.783 | lat= 153.7 ms | detected=False
+2026-02-10 11:44:35 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:35 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   81 | pred=4 (Noise       ) | conf=0.852 | lat= 155.5 ms | detected=False
+2026-02-10 11:44:35 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:35 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   82 | pred=4 (Noise       ) | conf=0.825 | lat= 154.9 ms | detected=False
+2026-02-10 11:44:35 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:35 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   83 | pred=4 (Noise       ) | conf=0.779 | lat= 153.7 ms | detected=False
+2026-02-10 11:44:36 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:36 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   84 | pred=4 (Noise       ) | conf=0.813 | lat= 155.5 ms | detected=False
+2026-02-10 11:44:36 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:36 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   85 | pred=4 (Noise       ) | conf=0.822 | lat= 152.9 ms | detected=False
+2026-02-10 11:44:36 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:36 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   86 | pred=4 (Noise       ) | conf=0.847 | lat= 153.2 ms | detected=False
+2026-02-10 11:44:37 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:37 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   87 | pred=4 (Noise       ) | conf=0.767 | lat= 155.0 ms | detected=False
+2026-02-10 11:44:37 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:37 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   88 | pred=4 (Noise       ) | conf=0.841 | lat= 155.6 ms | detected=False
+2026-02-10 11:44:37 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:37 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   89 | pred=0 (DJI         ) | conf=0.786 | lat= 154.0 ms | detected=False
+2026-02-10 11:44:38 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:38 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   90 | pred=4 (Noise       ) | conf=0.808 | lat= 154.2 ms | detected=False
+2026-02-10 11:44:38 | INFO     | drone_rf_backend:worker_loop:151 | Summary @ chunk 90 | rate=2.2 chunks/s | avg_latency=154.2 ms
+2026-02-10 11:44:38 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:38 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   91 | pred=4 (Noise       ) | conf=0.789 | lat= 154.2 ms | detected=False
+2026-02-10 11:44:38 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:38 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   92 | pred=4 (Noise       ) | conf=0.767 | lat= 153.6 ms | detected=False
+2026-02-10 11:44:39 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:39 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   93 | pred=4 (Noise       ) | conf=0.748 | lat= 152.5 ms | detected=False
+2026-02-10 11:44:39 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:39 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   94 | pred=4 (Noise       ) | conf=0.756 | lat= 154.6 ms | detected=False
+2026-02-10 11:44:39 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:39 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   95 | pred=4 (Noise       ) | conf=0.756 | lat= 153.2 ms | detected=False
+2026-02-10 11:44:40 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:40 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   96 | pred=4 (Noise       ) | conf=0.847 | lat= 155.2 ms | detected=False
+2026-02-10 11:44:40 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:40 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   97 | pred=4 (Noise       ) | conf=0.828 | lat= 154.3 ms | detected=False
+2026-02-10 11:44:40 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:40 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   98 | pred=4 (Noise       ) | conf=0.802 | lat= 153.0 ms | detected=False
+2026-02-10 11:44:40 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:40 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk   99 | pred=4 (Noise       ) | conf=0.801 | lat= 152.8 ms | detected=False
+2026-02-10 11:44:41 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:41 | INFO     | drone_rf_backend:worker_loop:144 | Chunk  100 | pred=0 (DJI         ) | conf=1.000 | lat= 153.0 ms | detected=True
+2026-02-10 11:44:41 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:41 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  101 | pred=4 (Noise       ) | conf=0.770 | lat= 153.2 ms | detected=False
+2026-02-10 11:44:41 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:41 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  102 | pred=4 (Noise       ) | conf=0.809 | lat= 153.8 ms | detected=False
+2026-02-10 11:44:42 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:42 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  103 | pred=4 (Noise       ) | conf=0.797 | lat= 153.6 ms | detected=False
+2026-02-10 11:44:42 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:42 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  104 | pred=4 (Noise       ) | conf=0.771 | lat= 153.6 ms | detected=False
+2026-02-10 11:44:43 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:43 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  105 | pred=4 (Noise       ) | conf=0.795 | lat= 154.0 ms | detected=False
+2026-02-10 11:44:43 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:43 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  106 | pred=4 (Noise       ) | conf=0.831 | lat= 154.2 ms | detected=False
+2026-02-10 11:44:43 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:43 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  107 | pred=4 (Noise       ) | conf=0.851 | lat= 153.2 ms | detected=False
+2026-02-10 11:44:44 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:44 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  108 | pred=0 (DJI         ) | conf=0.655 | lat= 153.5 ms | detected=False
+2026-02-10 11:44:44 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:44 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  109 | pred=4 (Noise       ) | conf=0.829 | lat= 153.9 ms | detected=False
+2026-02-10 11:44:44 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:44 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  110 | pred=4 (Noise       ) | conf=0.837 | lat= 154.8 ms | detected=False
+2026-02-10 11:44:45 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:45 | INFO     | drone_rf_backend:worker_loop:144 | Chunk  111 | pred=0 (DJI         ) | conf=1.000 | lat= 152.6 ms | detected=True
+2026-02-10 11:44:45 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:45 | INFO     | drone_rf_backend:worker_loop:144 | Chunk  112 | pred=0 (DJI         ) | conf=1.000 | lat= 152.8 ms | detected=True
+2026-02-10 11:44:45 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:45 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  113 | pred=4 (Noise       ) | conf=0.781 | lat= 154.3 ms | detected=False
+2026-02-10 11:44:46 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:46 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  114 | pred=4 (Noise       ) | conf=0.836 | lat= 155.0 ms | detected=False
+2026-02-10 11:44:46 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:46 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  115 | pred=4 (Noise       ) | conf=0.775 | lat= 153.0 ms | detected=False
+2026-02-10 11:44:47 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:47 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  116 | pred=0 (DJI         ) | conf=0.517 | lat= 154.3 ms | detected=False
+2026-02-10 11:44:47 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:47 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  117 | pred=4 (Noise       ) | conf=0.841 | lat= 154.5 ms | detected=False
+2026-02-10 11:44:47 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:47 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  118 | pred=4 (Noise       ) | conf=0.828 | lat= 153.7 ms | detected=False
+2026-02-10 11:44:48 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:48 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  119 | pred=4 (Noise       ) | conf=0.756 | lat= 154.1 ms | detected=False
+2026-02-10 11:44:48 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:48 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  120 | pred=4 (Noise       ) | conf=0.777 | lat= 154.2 ms | detected=False
+2026-02-10 11:44:48 | INFO     | drone_rf_backend:worker_loop:151 | Summary @ chunk 120 | rate=2.3 chunks/s | avg_latency=154.2 ms
+2026-02-10 11:44:49 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:49 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  121 | pred=4 (Noise       ) | conf=0.846 | lat= 153.3 ms | detected=False
+2026-02-10 11:44:49 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:49 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  122 | pred=4 (Noise       ) | conf=0.697 | lat= 153.1 ms | detected=False
+2026-02-10 11:44:50 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:50 | INFO     | drone_rf_backend:worker_loop:144 | Chunk  123 | pred=0 (DJI         ) | conf=1.000 | lat= 154.2 ms | detected=True
+2026-02-10 11:44:50 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:50 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  124 | pred=4 (Noise       ) | conf=0.757 | lat= 152.3 ms | detected=False
+2026-02-10 11:44:50 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:50 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  125 | pred=4 (Noise       ) | conf=0.759 | lat= 155.5 ms | detected=False
+2026-02-10 11:44:51 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:51 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  126 | pred=4 (Noise       ) | conf=0.841 | lat= 153.3 ms | detected=False
+2026-02-10 11:44:51 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:51 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  127 | pred=4 (Noise       ) | conf=0.805 | lat= 155.1 ms | detected=False
+2026-02-10 11:44:51 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:51 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  128 | pred=4 (Noise       ) | conf=0.808 | lat= 153.6 ms | detected=False
+2026-02-10 11:44:52 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:52 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  129 | pred=4 (Noise       ) | conf=0.760 | lat= 155.0 ms | detected=False
+2026-02-10 11:44:52 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:52 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  130 | pred=4 (Noise       ) | conf=0.833 | lat= 155.0 ms | detected=False
+2026-02-10 11:44:53 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:53 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  131 | pred=4 (Noise       ) | conf=0.792 | lat= 155.1 ms | detected=False
+2026-02-10 11:44:53 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:53 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  132 | pred=4 (Noise       ) | conf=0.819 | lat= 154.4 ms | detected=False
+2026-02-10 11:44:54 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:54 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  133 | pred=4 (Noise       ) | conf=0.800 | lat= 153.6 ms | detected=False
+2026-02-10 11:44:54 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:54 | INFO     | drone_rf_backend:worker_loop:144 | Chunk  134 | pred=0 (DJI         ) | conf=1.000 | lat= 153.7 ms | detected=True
+2026-02-10 11:44:55 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:55 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  135 | pred=4 (Noise       ) | conf=0.809 | lat= 152.2 ms | detected=False
+2026-02-10 11:44:56 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:56 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  136 | pred=4 (Noise       ) | conf=0.622 | lat= 154.1 ms | detected=False
+2026-02-10 11:44:57 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:57 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  137 | pred=4 (Noise       ) | conf=0.823 | lat= 153.6 ms | detected=False
+2026-02-10 11:44:58 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:58 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  138 | pred=4 (Noise       ) | conf=0.807 | lat= 155.2 ms | detected=False
+2026-02-10 11:44:58 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:58 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  139 | pred=4 (Noise       ) | conf=0.756 | lat= 155.6 ms | detected=False
+2026-02-10 11:44:58 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:58 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  140 | pred=4 (Noise       ) | conf=0.851 | lat= 153.4 ms | detected=False
+2026-02-10 11:44:58 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:58 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  141 | pred=4 (Noise       ) | conf=0.762 | lat= 154.7 ms | detected=False
+2026-02-10 11:44:59 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:59 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  142 | pred=4 (Noise       ) | conf=0.766 | lat= 154.1 ms | detected=False
+2026-02-10 11:44:59 | DEBUG    | drone_rf_backend:infer_one:47 | Inference | input_shape=[1, 2, 512, 2048] | output_logits_shape=[1, 7]
+2026-02-10 11:44:59 | DEBUG    | drone_rf_backend:worker_loop:146 | Chunk  143 | pred=4 (Noise       ) | conf=0.840 | lat= 314.7 ms | detected=False
