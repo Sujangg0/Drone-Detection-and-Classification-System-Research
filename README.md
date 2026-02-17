@@ -97,4 +97,4 @@ npm install
 npm run dev
 ```
 
-
+![Frontend Dashboard](image/frontend_dashboard.png)
