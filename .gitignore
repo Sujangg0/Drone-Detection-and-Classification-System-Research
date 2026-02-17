@@ -1,0 +1,20 @@
+# ===== Model weights / large files =====
+*.pt
+*.pth
+*.ckpt
+
+# ===== Logs =====
+logs/
+*.log
+
+# ===== Python cache =====
+__pycache__/
+*.pyc
+
+# ===== Frontend node modules =====
+node_modules/
+dist/
+
+# ===== Old frontend you don't need =====
+frontend-0/
+

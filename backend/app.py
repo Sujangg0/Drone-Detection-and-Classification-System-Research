@@ -9,6 +9,9 @@ from model_loader import load_model
 from pipeline import TransformSpectrogram, infer_one
 from store import STORE
 from sources.pt_source import PtFileSource
+from fastapi import Query
+import glob
+from fastapi.middleware.cors import CORSMiddleware
 
 # ────────────────────────────────────────────────────────────────
 # app.py - top of file (after imports, before anything else)
@@ -78,6 +81,21 @@ logger.info("═" * 70)
 
 # Other APi starts below
 app = FastAPI(title="Drone RF Detection Backend")
+
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",   # Vite React
+        "http://127.0.0.1:5173",
+        "http://localhost:3000",   # CRA React (optional)
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],   # allow GET, POST, etc.
+    allow_headers=["*"],   # allow all headers
+)
 
 
 model = load_model(CFG.best_model_path, CFG.model_name, CFG.num_classes, device)
@@ -190,3 +208,16 @@ def settings(s: Settings):
     if s.threshold is not None:
         CFG.threshold = float(s.threshold)
     return {"ok": True, "threshold": CFG.threshold}
+
+@app.get("/logs")
+def get_logs(lines: int = Query(80, ge=10, le=500)):
+    # get newest log file
+    files = sorted(glob.glob("logs/*.log"))
+    if not files:
+        return {"lines": []}
+    latest_file = files[-1]
+
+    # tail last N lines safely
+    with open(latest_file, "r", encoding="utf-8", errors="ignore") as f:
+        data = f.readlines()[-lines:]
+    return {"file": latest_file, "lines": [line.rstrip("\n") for line in data]}
