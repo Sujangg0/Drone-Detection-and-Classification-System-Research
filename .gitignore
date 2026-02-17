@@ -1,3 +1,6 @@
+# ===== HUGE DATASET (150GB) =====
+Robust-Drone-Detection-and-Classification/data/drone_RF_data/
+
 # ===== Model weights / large files =====
 *.pt
 *.pth
